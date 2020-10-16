@@ -41,7 +41,7 @@ public class FirstApplication {
                 "http://api-01.eu-west-1.0.10.0.x.symboldev.network:3000")) {
                 // http://api-01.eu-west-1.0.10.0.x.symboldev.network:3000-api-01-eu-west-1")) {
             // replace with mosaic ID
-            final String mosaicIdHex = "7F1C675E1F713634";
+            final String mosaicIdHex = "64D77034A6EE97FB";
             final MosaicId mosaicId = new MosaicId(mosaicIdHex);
 
             //replace with customer address
@@ -54,8 +54,8 @@ public class FirstApplication {
                     .create(
                             networkType,
                             recipientAddress,
-                            Collections.singletonList(mosaic),
-                            PlainMessage.create("Enjoy your ticket"))
+                            Collections.singletonList(mosaic))
+                            // PlainMessage.create("Enjoy your ticket"))
                     .maxFee(BigInteger.valueOf(2000000)).build();
             /* end block 01 */
 
